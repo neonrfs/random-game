@@ -7,5 +7,12 @@ Previously, I uploaded the whole VSCode project, but now I am just uploading the
 ## Free:
 You are free to do anything with this, it's just something I do for practice.
 
+## Game:
+If you just want to play the game and not have to go through all the processes to set up, then just download the jar file, a JRE, the JavaFX SDK, and run the following commands in a terminal:
+```
+java -jar --module-path /path/to/JFX --add-modules javafx.controls,javafx.fxml --enable-preview HelloFX.jar
+```
+The jar can be found in the releases tab...
+
 ## Current version:
-App Version: v0.0.1
+App Version: v0.4
