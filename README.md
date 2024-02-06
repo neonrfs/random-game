@@ -10,7 +10,7 @@ You are free to do anything with this, it's just something I do for practice.
 ## Game:
 If you just want to play the game and not have to go through all the processes to set up, then just download the jar file, a JRE, the JavaFX SDK, and run the following commands in a terminal:
 ```
-java -jar --module-path /path/to/JFX --add-modules javafx.controls,javafx.fxml --enable-preview HelloFX.jar
+java -jar --module-path /path/to/JFX --add-modules javafx.controls,javafx.fxml --enable-preview RandomGame.jar
 ```
 The jar can be found in the releases tab...
 
