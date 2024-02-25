@@ -24,7 +24,7 @@ public class GameController {
     @FXML AnchorPane anchorPane;
 
     Calculate calculate = new Calculate();
-
+    
     public void getNumber() {
         try {
             if (textField.getText().contains("/")) {
@@ -38,7 +38,7 @@ public class GameController {
                         displayLabel.setText("App version: " + calculate.appbuild);
                         break;
                     case "/sdkinfo":
-                        displayLabel.setText("Uses JDK 21.0.2 and JFX SDK 21.0.2");
+                        displayLabel.setText("Uses OpenJDK 21.0.2 and JFX SDK 21.0.2");
                         break;
                     case "/credits":
                         displayLabel.setText("Runs on JFX Framework, created in VSCode and SceneBuilder");
@@ -46,7 +46,7 @@ public class GameController {
                     case "/retry":
                         displayLabel.setText("Enter a number between 1 and " + Calculate.difficulty + ".");
                         textField.setPromptText("1 and " + Calculate.difficulty);
-                        calculate.reset(Calculate.difficulty);
+                        calculate.reset();
                         break;
                     case "/com.x":
                         displayLabel.setText("Sure, it\'s @neon_roomforsq");
@@ -62,10 +62,10 @@ public class GameController {
                         break;
                 }
             } else if (textField.getText().equals("")) {
-                if (displayLabel.getText().equals("No marks for writing nothin\', bro!")) {
-                    displayLabel.setText("Don't be lazy bro!");
+                if (displayLabel.getText().equals("No marks for writing nothin\', mate!")) {
+                    displayLabel.setText("Don't be lazy mate!");
                 } else {
-                    displayLabel.setText("No marks for writing nothin\', bro!");
+                    displayLabel.setText("No marks for writing nothin\', mate!");
                 }
             } else {
                 displayLabel.setText(calculate.matchNumber(Long.parseLong(textField.getText())));

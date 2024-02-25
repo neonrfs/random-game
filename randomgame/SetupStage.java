@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class SetupStage extends Application {
+
     @Override
     public void start(Stage stage) {
         try {
