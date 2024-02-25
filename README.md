@@ -15,4 +15,4 @@ java -jar --module-path /path/to/JFX --add-modules javafx.controls,javafx.fxml -
 The jar can be found in the releases tab...
 
 ## Current version:
-App Version: v0.4
+App Version: v0.5
