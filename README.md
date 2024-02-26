@@ -1,4 +1,4 @@
-# A game I made for coding practise.
+# A game I made for coding practice.
 This is a small game which I made for coding practice (just, I learnt to spell that right now)
 
 ## DIY
