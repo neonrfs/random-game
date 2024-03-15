@@ -8,11 +8,15 @@ Previously, I uploaded the whole VSCode project, but now I am just uploading the
 You are free to do anything with this, it's just something I do for practice.
 
 ## Game:
+The jar file has been deprecated...
 If you just want to play the game and not have to go through all the processes to set up, then just download the jar file, a JRE, the JavaFX SDK, and run the following commands in a terminal:
 ```
-java -jar --module-path /path/to/JFX --add-modules javafx.controls,javafx.fxml --enable-preview RandomGame.jar
+java -jar --module-path /path/to/JFX --add-modules javafx.controls,javafx.fxml,javafx.media,javafx.graphics --enable-preview RandomGame.jar
 ```
 The jar can be found in the releases tab...
-
-## Current version:
-App Version: v0.5
+Now use the .class files and run the following commands, replacing with actual file paths
+```
+java --module-path /path/to/JFX --add-modules javafx.controls,javafx.fxml,javafx.media,javafx.graphics net.radley.SetupStage
+```
+Current version:
+App Version: v0.6
