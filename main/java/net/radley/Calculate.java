@@ -38,7 +38,7 @@ public class Calculate {
      * @apiNote App build
      * @since RandomGame v0.0
      */
-    public static String appbuild = "v0.6";
+    public static String appbuild = "v0.8";
     /**
      * String
      * Used to set themes for the game
@@ -61,8 +61,8 @@ public class Calculate {
      * @since RandomGame v0.1
      */
     public Calculate(int difficulty) {
-        number = random.nextInt(difficulty);
         Calculate.difficulty = difficulty;
+        number = random.nextInt(Calculate.difficulty);
         // System.out.println(number);
     }
     /**

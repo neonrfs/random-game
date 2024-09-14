@@ -7,13 +7,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonType;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class SetupStage extends Application {
+
     Music music = new Music();
     @Override
     public void start(Stage stage) {
+        
         try {
             Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
             Scene scene = new Scene(root, 640, 480);
@@ -22,7 +25,9 @@ public class SetupStage extends Application {
             stage.setTitle("Random game!");
             stage.setScene(scene);
             stage.setResizable(false);
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("play.png")));
             stage.show();
+            music.initialize();
             music.play();
 
             stage.setOnCloseRequest(event -> {

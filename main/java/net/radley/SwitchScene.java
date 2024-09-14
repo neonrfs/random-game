@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class SwitchScene {
-    private static int randomLimit = 30;
+    private static int randomLimit = 45;
     private static FXMLLoader loader;
     private static Parent root;
     private static Stage stage;
@@ -52,12 +52,12 @@ public class SwitchScene {
                 try {
                     root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
                     scene = new Scene(root, 640, 480);
-                    scene.getStylesheets().add(getClass().getResource("dark.css").toExternalForm());
+                    scene.getStylesheets().add(getClass().getResource(Calculate.themeStatus).toExternalForm());
                     stage.setScene(scene);
                 } catch (IOException e) {
                     System.out.println(e);
                 }
-            } else if (arg0.getCode().equals(KeyCode.SHIFT) || arg0.getCode().equals(KeyCode.CONTROL)) {
+            } else if (arg0.getCode().equals(KeyCode.SHIFT) || arg0.getCode().equals(KeyCode.CONTROL) || arg0.getCode().equals(KeyCode.TAB)) {
                 switch ((int) (Math.random() * (randomLimit + 1))) {
                     case 1:
                     controller.displayLabel.setText("Do you REALLY need help?");
@@ -179,8 +179,68 @@ public class SwitchScene {
                     controller.displayLabel.setText("Don't you have something else to do?");
                     break;
 
+                    case 31:
+                    controller.displayLabel.setText("Let's all play a game");
+                    break;
+
+                    case 32:
+                    controller.displayLabel.setText("WHY DON'T YOU TRY TO GUESS!");
+                    break;
+
+                    case 33:
+                    controller.displayLabel.setText("Pam, pam pam pam, NICO'S!");
+                    break;
+
+                    case 34:
+                    controller.displayLabel.setText("Repent for thy sins.");
+                    break;
+
+                    case 35:
+                    controller.displayLabel.setText("One must sacrifice himself.");
+                    break;
+
+                    case 36:
+                    controller.displayLabel.setText("The LORD bless thee and keep thee");
+                    break;
+
+                    case 37:
+                    controller.displayLabel.setText("CS:Source reloads -> 3 secs. -> 'I MISSED'");
+                    break;
+
+                    case 38:
+                    controller.displayLabel.setText("G&B reloads -> 35 secs -> 'It was nothing...'");
+                    break;
+
+                    case 39:
+                    controller.displayLabel.setText("I was down, but now I'm...");
+                    break;
+
+                    case 40:
+                    controller.displayLabel.setText("Is that you... NVM, i must be dreaming.");
+                    break;
+
+                    case 41:
+                    controller.displayLabel.setText("Thank you for playing my game.");
+                    break;
+
+                    case 42:
+                    controller.displayLabel.setText("I recommend you to try e-sword");
+                    break;
+
+                    case 43:
+                    controller.displayLabel.setText("Man, I wish I got Linux back...");
+                    break;
+
+                    case 44:
+                    controller.displayLabel.setText("I could have danced all night...");
+                    break;
+
+                    case 45:
+                    controller.displayLabel.setText("They are corrupt, their deeds are vile.");
+                    break;
+
                     default:
-                    controller.displayLabel.setText("IDONTHAVEANYTHINGTOSAYMATE");
+                    controller.displayLabel.setText("It's a heartbreak warfare.");
                     break;
                 }
             }

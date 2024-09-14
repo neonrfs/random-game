@@ -26,21 +26,21 @@ public class GameController {
         try {
             if (textField.getText().contains("/")) {
                 switch (textField.getText().toLowerCase()) {
-                    case "/help":
+                    case "/help", "/h", "/":
                         displayLabel.setText("See terminal for more info.");
                         System.out.println("Slash commands can be typed for info about the app. The following commands can be used.");
                         System.out.println("/appbuild\n/sdkinfo\n/credits\n/com.x\n/com.roblox");
                         break;
-                    case "/appbuild":
+                    case "/appbuild", "/app":
                         displayLabel.setText("App version: " + Calculate.appbuild);
                         break;
-                    case "/sdkinfo":
+                    case "/sdkinfo", "/sdk":
                         displayLabel.setText("Uses OpenJDK 21.0.2 and JFX SDK 21.0.2");
                         break;
-                    case "/credits":
+                    case "/credits", "/c":
                         displayLabel.setText("Runs on JFX Framework, created in VSCode and SceneBuilder");
                         break;
-                    case "/retry":
+                    case "/retry", "/r":
                         displayLabel.setText("Enter a number between 1 and " + Calculate.difficulty + ".");
                         textField.setPromptText("1 and " + Calculate.difficulty);
                         calculate.reset();
