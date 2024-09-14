@@ -19,4 +19,4 @@ Now use the .class files and run the following commands, replacing with actual f
 java --module-path /path/to/JFX --add-modules javafx.controls,javafx.fxml,javafx.media,javafx.graphics net.radley.SetupStage
 ```
 Current version:
-App Version: v0.6
+App Version: v0.8
