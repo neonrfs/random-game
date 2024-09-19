@@ -1,0 +1,10 @@
+net\radley\Calculate.class
+module-info.class
+net\radley\MenuController.class
+net\radley\SetupStage.class
+net\radley\Music.class
+net\radley\SettingsController$1.class
+net\radley\Saves.class
+net\radley\SettingsController.class
+net\radley\GameController.class
+net\radley\SwitchScene.class

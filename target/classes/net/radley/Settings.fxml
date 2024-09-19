@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.radley.SettingsController">
+   <children>
+      <Button fx:id="menu" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#toMenu" onMouseClicked="#hover" text="Menu">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+      <Label layoutX="98.0" layoutY="98.0" text="Theme">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="pickTheme" layoutX="320.0" layoutY="99.0" onMouseClicked="#hover" prefHeight="24.0" prefWidth="222.0" />
+      <Label layoutX="98.0" layoutY="138.0" text="Music">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="178.0" text="SFX (Coming soon)">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Label>
+      <Slider fx:id="volume" blockIncrement="0.01" layoutX="320.0" layoutY="143.0" max="1.0" prefHeight="16.0" prefWidth="222.0" value="0.5" />
+      <Slider blockIncrement="1.0" layoutX="320.0" layoutY="183.0" prefHeight="16.0" prefWidth="222.0" value="100.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutY="307.0" prefHeight="112.0" prefWidth="640.0" text="Credits:&#10;Runs on JavaFX Framework&#10;Music taken from various games." textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
