@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class SwitchScene {
-    private static int randomLimit = 60;
+    private static int randomLimit = 61;
     private static FXMLLoader loader;
     private static Parent root;
     private static Stage stage;
@@ -158,7 +158,7 @@ public class SwitchScene {
                     break;
                     
                     case 22:
-                    controller.displayLabel.setText("CS2 is trash, I\'d rather play Fortnite...");
+                    controller.displayLabel.setText("CS2 is trash, I\'d rather play Fortnite... (jk)");
                     break;
                     
                     case 23:
@@ -311,6 +311,10 @@ public class SwitchScene {
 
                     case 60:
                     controller.displayLabel.setText("The hills and valleys, y'all.");
+                    break;
+
+                    case 61:
+                    controller.displayLabel.setText("CS2 is actually good, Fornite trash");
                     break;
 
                     default:

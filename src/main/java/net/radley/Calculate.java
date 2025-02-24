@@ -39,14 +39,14 @@ public class Calculate {
      * @apiNote App build
      * @since RandomGame v0.0
      */
-    public static String appbuild = "v0.9";
+    public static String appbuild = "v0.9.1";
     /**
      * String
      * Used to set themes for the game
      * @apiNote This is supposed readonly, but I couldn't implement that
      * @since RandomGame v0.6
      */
-    public static String themeStatus = "dark.css";
+    protected static String themeStatus = "dark.css";
     /**
      * Calculate, used for all calculations
      * @apiNote This code actually does nothing
