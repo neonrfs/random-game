@@ -39,7 +39,7 @@ public class Calculate {
      * @apiNote App build
      * @since RandomGame v0.0
      */
-    public static String appbuild = "v0.9.1";
+    public static String appbuild = "v0.9.2";
     /**
      * String
      * Used to set themes for the game

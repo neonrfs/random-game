@@ -54,4 +54,15 @@ public class SettingsController implements Initializable {
             System.out.println(e);
         }
     }
+
+    public void changeMusic() {
+        SetupStage.music.pause();
+        SetupStage.music = new Music();
+        try {
+            SetupStage.music.play();
+        } catch (MalformedURLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 }

@@ -22,9 +22,8 @@ public class SetupStage extends Application {
             saves = new Saves();
             music = new Music();
             Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
-            Scene scene = new Scene(root, 640, 480);
+            Scene scene = new Scene(root, 800, 600);
             scene.getStylesheets().add(getClass().getResource("dark.css").toExternalForm());
-            // scene.getStylesheets().add("dark.css");
             stage.setTitle("Random game!");
             stage.setScene(scene);
             stage.setResizable(false);
